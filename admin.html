@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - Protected Page</title>
+    <script src='app.js' defer></script>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+</head>
+<body class="flex flex-col items-center justify-center h-screen bg-gray-100">
+    <div class="w-full max-w-md">
+        <div id="protected-content" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 hidden">
+            <h2 class="text-center text-2xl mb-4">Protected Content</h2>
+            <p id="welcome-message" class="text-gray-700 text-base"></p>
+            <button id="logout-btn" class="mt-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                Logout
+            </button>
+        </div>
+        <div id="error-message" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative hidden" role="alert">
+            <span id="error-text" class="block sm:inline"></span>
+        </div>
+    </div>
+</body>
+</html>
